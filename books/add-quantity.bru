@@ -1,0 +1,18 @@
+meta {
+  name: add quantity
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base-url}}/add-books
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    book_identitiy_id: 1,
+    quantity: 5
+  }
+}

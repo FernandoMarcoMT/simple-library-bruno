@@ -1,0 +1,15 @@
+meta {
+  name: borrow list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base-url}}/books/borrow
+  body: none
+  auth: inherit
+}
+
+query {
+  ~statuses[]: 1
+}

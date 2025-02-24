@@ -1,0 +1,17 @@
+meta {
+  name: return
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base-url}}/book/return
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "book_id": 1,
+  }
+}

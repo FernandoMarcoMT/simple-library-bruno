@@ -1,0 +1,23 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base-url}}/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "acc-1",
+    "phone_number": "082123670582"
+  }
+}
+
+script:post-response {
+  let data = res.body.data.token;
+  bru.setEnvVar("token", data);
+}

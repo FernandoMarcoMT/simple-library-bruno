@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{base-url}}/books/{{id}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Atomic Habit",
+    "category_id": 1,
+    "author_id": 1,
+    "publisher_id": 1=,
+    "quantity: 5
+  }
+}
