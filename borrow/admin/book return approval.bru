@@ -5,7 +5,13 @@ meta {
 }
 
 post {
-  url: {{base-url}}/book-return-approval
-  body: none
+  url: {{base-url}}/api/book-return-approval
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "book_return_id": 1
+  }
 }

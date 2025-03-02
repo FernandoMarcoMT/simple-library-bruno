@@ -1,0 +1,19 @@
+meta {
+  name: create
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base-url}}/api/author
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "author1",
+    "phone_number": "021354",
+    "email": "test@gmail.com"
+  }
+}

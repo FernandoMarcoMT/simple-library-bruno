@@ -5,11 +5,11 @@ meta {
 }
 
 get {
-  url: {{base-url}}/books/borrow
+  url: {{base-url}}/api/books/borrow
   body: none
   auth: inherit
 }
 
-query {
+params:query {
   ~statuses[]: 1
 }

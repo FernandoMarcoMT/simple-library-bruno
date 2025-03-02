@@ -6,6 +6,12 @@ meta {
 
 post {
   url: {{base-url}}/book-application
-  body: none
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "book_id": 1
+  }
 }

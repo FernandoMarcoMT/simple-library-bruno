@@ -5,7 +5,13 @@ meta {
 }
 
 post {
-  url: {{base-url}}/book-applications/approval
-  body: none
+  url: {{base-url}}/api/book-applications/approval
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "book_application_id": 1
+  }
 }
